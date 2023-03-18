@@ -1,0 +1,9 @@
+{
+  "dotenv.enableAutocloaking": false,
+  "editor.tabSize": 2,
+  "editor.indentSize": "tabSize",
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+}
