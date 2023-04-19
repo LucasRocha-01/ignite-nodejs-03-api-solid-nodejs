@@ -1,9 +1,17 @@
 {
-  "dotenv.enableAutocloaking": false,
-  "editor.tabSize": 2,
-  "editor.indentSize": "tabSize",
-  "editor.formatOnSave": false,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
+	"dotenv.enableAutocloaking": false,
+	// {
+	//   "dotenv.enableAutocloaking": false,
+	//   "editor.tabSize": 2,
+	//   "editor.indentSize": "tabSize",
+	//   "editor.formatOnSave": true,
+	//   "editor.codeActionsOnSave": {
+	//     "source.fixAll.eslint": true
+	//   },
+	// }
+
+	"editor.formatOnSave": false,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true
+	}
 }
