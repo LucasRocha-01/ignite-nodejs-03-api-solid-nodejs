@@ -6,11 +6,15 @@
   "scripts": {
     "start:dev": "tsx watch src/server.ts",
     "start": "node build/server.js",
-    "teste": "vitest run",
-    "teste:ui": "vitest --ui",
-    "teste:watch": "vitest",
+    "teste:create-prisma-environment" : "npm link ./prisma/vitest-environment-prisma",
+    "teste:install-prisma-environment" : "npm link vitest-environment-prisma",
+    "teste": "vitest run --dir src/use-cases",
+    "teste:watch": "vitest --dir src/use-cases",
+    "preteste:e2e": "run-s teste:create-prisma-environment teste:install-prisma-environment",
+    "teste:e2e": "vitest run --dir src/http",
     "teste:coverage": "vitest run --coverage",
-    "build": "tsup src --out-dir build"
+    "build": "tsup src --out-dir build",
+    "teste:ui": "vitest --ui"
   },
   "keywords": [],
   "author": "",
@@ -22,6 +26,7 @@
     "@vitest/coverage-c8": "0.30.1",
     "@vitest/ui": "0.30.1",
     "eslint": "8.34.0",
+    "npm-run-all": "4.1.5",
     "prisma": "4.12.0",
     "tsup": "6.6.3",
     "tsx": "3.12.5",
