@@ -14,7 +14,8 @@
     "teste:e2e": "vitest run --dir src/http",
     "teste:coverage": "vitest run --coverage",
     "build": "tsup src --out-dir build",
-    "teste:ui": "vitest --ui"
+    "teste:ui": "vitest --ui",
+    "prisma:studio":"npx prisma studio"
   },
   "keywords": [],
   "author": "",
